@@ -15,7 +15,7 @@ public class PaddleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FlipPaddle(Keyboard.current.spaceKey.isPressed);
+        //FlipPaddle(Keyboard.current.spaceKey.isPressed);
     }
 
     public void FlipPaddle(bool isPressed)
