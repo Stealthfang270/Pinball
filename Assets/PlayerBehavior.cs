@@ -13,6 +13,9 @@ public class PlayerBehavior : MonoBehaviour
     [SerializeField] InputAction useLeft;
     [SerializeField] InputAction useRight;
 
+    [SerializeField] Spring spring;
+    [SerializeField] InputAction pullSpring;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,11 @@ public class PlayerBehavior : MonoBehaviour
     {
         leftPaddle.FlipPaddle(useLeft.IsPressed());
         rightPaddle.FlipPaddle(useRight.IsPressed());
+        if (pullSpring.IsPressed())
+        {
+            spring.PullSpring(5f);
+        }
+        
     }
 
     private void OnEnable()
