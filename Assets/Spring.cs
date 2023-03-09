@@ -6,6 +6,7 @@ public class Spring : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] SpringJoint2D spring;
+    [SerializeField] Rigidbody2D rb;
     void Start()
     {
         
@@ -19,10 +20,10 @@ public class Spring : MonoBehaviour
 
     public void PullSpring(float amount)
     {
-        spring.distance = amount - 12f;
+        spring.distance = amount - 12;
 
-        spring.attachedRigidbody.AddForce(Vector2.down * amount * 16);
-        Debug.Log("Weeee");
+        //rb.AddForce(Vector2.down * amount * 5000f);
+        rb.transform.position = new Vector2(3.51f, -4.5f);
 
     }
 }
