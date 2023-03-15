@@ -7,6 +7,7 @@ public class BallTeleporter : MonoBehaviour
 {
 
     Rigidbody2D rb;
+    public int ballsLeft = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +27,6 @@ public class BallTeleporter : MonoBehaviour
     {
         rb.transform.position = pos;
         rb.velocity = Vector2.zero;
+        ballsLeft--;
     }
 }
