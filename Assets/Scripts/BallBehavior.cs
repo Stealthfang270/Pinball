@@ -25,7 +25,7 @@ public class BallBehavior : MonoBehaviour
         }
         if(ballTeleporter.ballsLeft <= 0)
         {
-            ballTeleporter.ballsLeft = 3;
+            ballTeleporter.ballsLeft = 5;
             scoreTracker.ResetScore();
         }
     }

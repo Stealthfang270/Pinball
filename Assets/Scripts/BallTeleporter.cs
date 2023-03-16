@@ -7,7 +7,7 @@ public class BallTeleporter : MonoBehaviour
 {
 
     Rigidbody2D rb;
-    public int ballsLeft = 3;
+    public int ballsLeft = 5;
     // Start is called before the first frame update
     void Start()
     {
